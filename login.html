@@ -12,6 +12,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/2bee739f93.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+              background-image: url(https://wallpaper.dog/large/20467819.jpg);
+            }
+            </style>
+
     </head>
     <body>
         <header>
@@ -25,27 +31,27 @@
 <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
               </div>
-            </header>
-            <div class="index">
-                <img src="https://images.pling.com/img/00/00/62/00/07/1602726/70438f32765c73a4685c55d2df97b11699d1263ca6b4fae9f42c747a1a565af43151.jpg">
-                
-            </div>
-            <div class="points">
-                <p>     Here at Tombstore, our main objective is customer satisfaction. 
-                    With stores all over the nation, we strive to be your go-to store for all your Halloween needs. We take pride in being able to deliver the best customer service possible.
-                </p>
-                <p> Our dedication to you as a customer is important to us. For that reason, we've made it easier for you to gear up
-                    for the Halloween season. For the whole month of Ooctober, we'll offer free shipping on all orders made online.
-                    Can't wait for your items to ship? Give us a call to see if we've got what you're looking for in stock, 
-                    and you can order for pickup.
-                </p>
-                <p>When ordering online, remember to:</p>
-                <ol>
-                    <li>Check your email beforehand for sweet deals!</li>
-                    <li>Register for our newsletter to stay up to date on any spooky steals, and to track your orders. </li>
-                    <li>Start adding to your cart, then head to checkout!</li>
-                </ol>
-            </div>
-
+        </header>
+        <!-- Login Form -->
+        <div class="login-form">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <h2 class="text-center">Log in</h2>       
+                <div class="form-user">
+                    <input type="text" class="user-form" placeholder="Username" required="required">
+                </div>
+                <div class="password">
+                    <input type="password" class="pass-form" placeholder="Password" required="required">
+                </div>
+                <div class="form-set">
+                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
+                <div class="clearfix">
+                    <label class="float-left form-check-label"><input type="checkbox"> Remember me</label>
+                    <a href="#" class="float-right">Forgot Password?</a>
+                    <p class="text-center"><a href="#">Create an Account</a></p>
+            <p class="text-right"><a href="register.html">Already a user?</a></p>
+                </div>        
+            </form>
+        </div>
     </body>
 </html>
