@@ -12,6 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/2bee739f93.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+        background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQCVVlX9W6f54HuFFY4qC_-uN7lbRTiV94ag&usqp=CAU);
+            }
+            </style>
     </head>
     <body>
         <header>
@@ -25,27 +30,40 @@
 <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
               </div>
-            </header>
-            <div class="index">
-                <img src="https://images.pling.com/img/00/00/62/00/07/1602726/70438f32765c73a4685c55d2df97b11699d1263ca6b4fae9f42c747a1a565af43151.jpg">
-                
-            </div>
-            <div class="points">
-                <p>     Here at Tombstore, our main objective is customer satisfaction. 
-                    With stores all over the nation, we strive to be your go-to store for all your Halloween needs. We take pride in being able to deliver the best customer service possible.
-                </p>
-                <p> Our dedication to you as a customer is important to us. For that reason, we've made it easier for you to gear up
-                    for the Halloween season. For the whole month of Ooctober, we'll offer free shipping on all orders made online.
-                    Can't wait for your items to ship? Give us a call to see if we've got what you're looking for in stock, 
-                    and you can order for pickup.
-                </p>
-                <p>When ordering online, remember to:</p>
-                <ol>
-                    <li>Check your email beforehand for sweet deals!</li>
-                    <li>Register for our newsletter to stay up to date on any spooky steals, and to track your orders. </li>
-                    <li>Start adding to your cart, then head to checkout!</li>
-                </ol>
-            </div>
+        </header>
+        <!-- Register/sign up Form -->
+        <div class="signup-form">
+            <form action="/examples/actions/confirmation.php" method="post">
+                <h2>Register</h2>
+                <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                <div class="form-group">
+                    <div class="name-row">
+                        <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                        <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                    </div>        	
+                </div>
+                <label>How did you hear about us?</label>
+                <input type="radio" id="friend" value="friend" name="friend"><label for="friend" class="light">Friend</label>
+                <input type="radio" id="family" value="family" name="family"><label for="family" class="light">Family</label>
+                <input type="radio" id="ad" value="ad" name="ad"><label for="ad" class="light">Advertisement</label>
 
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                </div>        
+                <div class="form-group">
+                    <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                </div>
+            </form>
+            <div class="text-center">Already have an account? <a href="login.html">Sign in</a></div>
+        </div>
     </body>
 </html>
