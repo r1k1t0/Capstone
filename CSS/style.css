@@ -90,3 +90,227 @@ div.password {
     font-size: 15px;
     font-weight: bold;
 }
+/* Register Form */
+
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #080a08;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  font-size: 15px;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #999;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form {
+	color: rgb(22, 21, 21);
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #f2f3f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+.signup-form input[type="checkbox"] {
+margin-top: 3px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: #fff;
+text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+	color: orange;
+}
+.signup-form form a {
+	color: #2050d398;
+text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.name-row {
+	padding: 15px;
+	margin-left: 0px;
+}
+
+/* Product Layout */
+.wrap {
+	width: 1000px;
+	margin:auto;
+	margin-top: 100px;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,10);
+	transition: 0.4s;
+	width: 300px;
+	background: rgb(237, 230, 230);
+	text-align: center;
+	font-size: 16px;
+	float: left;
+	margin: 10px;
+}
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 10);
+}
+.container {
+	padding: 2px 16px;
+	color: #201f1f;
+}
+p.description {
+	color: #201f1f;
+}
+   /* Final Checkout with User Info */
+   .row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 -16px;
+  }
+  
+  .col-25 {
+	-ms-flex: 25%;
+	flex: 25%;
+  }
+  
+  .col-50 {
+	-ms-flex: 50%;
+	flex: 50%;
+	color: #201f1f;
+  }
+  
+  .col-75 {
+	-ms-flex: 75%;
+	flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+	padding: 0 16px;
+  }
+  
+  .container {
+	background-color: #f2f2f2;
+	padding: 5px 20px 15px 20px;
+	border: 1px solid lightgrey;
+	border-radius: 3px;
+  }
+  
+  input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  label {
+	margin-bottom: 10px;
+	display: block;
+	color:#201f1f
+  }
+  
+  .icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+  }
+  
+  .checkout {
+	background-color: #04AA6D;
+	color: rgb(10, 10, 10);
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+  }
+  
+  .btn:hover {
+	background-color: orange;
+  }
+  span.price {
+	float: right;
+	color: grey;
+  }
+  @media (max-width: 800px) {
+	.row {
+	  flex-direction: column-reverse;
+	}
+	.col-25 {
+	  margin-bottom: 20px;
+	}
+  }
+  h4 {
+	color: #161515;
+  }
+  span.cart-items {
+	float: right;
+  }
+  p.test {
+	color: #201f1f;
+  }
+  .fa-cc-visa {
+	color: navy;
+  }
+  .fa-cc-amex {
+	color:blue
+  }
+.fa-cc-mastercard {
+	color:red
+}
+.fa-cc-discover {
+	color:orange
+}
